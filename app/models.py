@@ -23,3 +23,6 @@ class Videos(db.Model):
 
     def __repr__(self):
         return f"Videos('{self.title}', '{self.ownership}', '{self.genre}', '{self.release_year}')"
+    
+    def as_dict(self):
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}

@@ -1,0 +1,29 @@
+[2023-03-28 11:54:36,535] INFO: [WinError 183] Cannot create a file when that file already exists: 'static/videos'
+[2023-03-28 11:54:36,535] DEBUG: Using proactor: IocpProactor
+[2023-03-28 11:54:36,536] INFO: ffmpeg -y -i prevideos/star.mp4 -c:v libx264 -c:a aac -bf 1 -keyint_min 25 -g 250 -sc_threshold 40 -hls_list_size 0 -hls_time 10 -hls_allow_cache 1 -hls_segment_filename static/videos/_720p_%04d.ts -hls_fmp4_init_filename _720p_init.mp4 -s:v 1280x720 -b:v 2048k -b:a 320k -strict -2 static/videos/_720p.m3u8
+[2023-03-28 11:54:36,536] INFO: ffmpeg running command: ffmpeg -y -i prevideos/star.mp4 -c:v libx264 -c:a aac -bf 1 -keyint_min 25 -g 250 -sc_threshold 40 -hls_list_size 0 -hls_time 10 -hls_allow_cache 1 -hls_segment_filename static/videos/_720p_%04d.ts -hls_fmp4_init_filename _720p_init.mp4 -s:v 1280x720 -b:v 2048k -b:a 320k -strict -2 static/videos/_720p.m3u8
+[2023-03-28 11:55:34,251] INFO: [WinError 183] Cannot create a file when that file already exists: 'static/videos'
+[2023-03-28 11:55:34,251] DEBUG: Using proactor: IocpProactor
+[2023-03-28 11:55:34,252] INFO: ffmpeg -y -i prevideos/star.mp4 -c:v libx264 -c:a aac -bf 1 -keyint_min 25 -g 250 -sc_threshold 40 -hls_list_size 0 -hls_time 10 -hls_allow_cache 1 -hls_segment_filename static/videos/star_720p_%04d.ts -hls_fmp4_init_filename star_720p_init.mp4 -s:v 1280x720 -b:v 2048k -b:a 320k -strict -2 static/videos/star_720p.m3u8
+[2023-03-28 11:55:34,252] INFO: ffmpeg running command: ffmpeg -y -i prevideos/star.mp4 -c:v libx264 -c:a aac -bf 1 -keyint_min 25 -g 250 -sc_threshold 40 -hls_list_size 0 -hls_time 10 -hls_allow_cache 1 -hls_segment_filename static/videos/star_720p_%04d.ts -hls_fmp4_init_filename star_720p_init.mp4 -s:v 1280x720 -b:v 2048k -b:a 320k -strict -2 static/videos/star_720p.m3u8
+[2023-03-28 11:57:47,481] INFO: ffmpeg executed command successfully
+[2023-03-28 11:58:18,845] INFO: [WinError 183] Cannot create a file when that file already exists: 'static/videos'
+[2023-03-28 11:58:18,845] DEBUG: Using proactor: IocpProactor
+[2023-03-28 11:58:18,846] INFO: ffmpeg -y -i prevideos/unreal.mp4 -c:v libx264 -c:a aac -bf 1 -keyint_min 25 -g 250 -sc_threshold 40 -hls_list_size 0 -hls_time 10 -hls_allow_cache 1 -hls_segment_filename static/videos/unreal_720p_%04d.ts -hls_fmp4_init_filename unreal_720p_init.mp4 -s:v 1280x720 -b:v 2048k -b:a 320k -strict -2 static/videos/unreal_720p.m3u8
+[2023-03-28 11:58:18,846] INFO: ffmpeg running command: ffmpeg -y -i prevideos/unreal.mp4 -c:v libx264 -c:a aac -bf 1 -keyint_min 25 -g 250 -sc_threshold 40 -hls_list_size 0 -hls_time 10 -hls_allow_cache 1 -hls_segment_filename static/videos/unreal_720p_%04d.ts -hls_fmp4_init_filename unreal_720p_init.mp4 -s:v 1280x720 -b:v 2048k -b:a 320k -strict -2 static/videos/unreal_720p.m3u8
+[2023-03-28 12:03:51,892] INFO: ffmpeg executed command successfully
+[2023-03-28 12:05:16,026] INFO: [WinError 183] Cannot create a file when that file already exists: 'static/videos'
+[2023-03-28 12:05:16,027] DEBUG: Using proactor: IocpProactor
+[2023-03-28 12:05:16,027] INFO: ffmpeg -y -i prevideos/mirage.mp4 -c:v libx264 -c:a aac -bf 1 -keyint_min 25 -g 250 -sc_threshold 40 -hls_list_size 0 -hls_time 10 -hls_allow_cache 1 -hls_segment_filename static/videos/mirage_720p_%04d.ts -hls_fmp4_init_filename mirage_720p_init.mp4 -s:v 1280x720 -b:v 2048k -b:a 320k -strict -2 static/videos/mirage_720p.m3u8
+[2023-03-28 12:05:16,027] INFO: ffmpeg running command: ffmpeg -y -i prevideos/mirage.mp4 -c:v libx264 -c:a aac -bf 1 -keyint_min 25 -g 250 -sc_threshold 40 -hls_list_size 0 -hls_time 10 -hls_allow_cache 1 -hls_segment_filename static/videos/mirage_720p_%04d.ts -hls_fmp4_init_filename mirage_720p_init.mp4 -s:v 1280x720 -b:v 2048k -b:a 320k -strict -2 static/videos/mirage_720p.m3u8
+[2023-03-28 12:07:22,310] INFO: ffmpeg executed command successfully
+[2023-03-28 20:28:01,242] INFO: [WinError 183] Cannot create a file when that file already exists: 'static/videos'
+[2023-03-28 20:28:01,250] DEBUG: Using proactor: IocpProactor
+[2023-03-28 20:28:01,250] INFO: ffmpeg -y -i prevideos/mass.mp4 -c:v libx264 -c:a aac -bf 1 -keyint_min 25 -g 250 -sc_threshold 40 -hls_list_size 0 -hls_time 10 -hls_allow_cache 1 -hls_segment_filename static/videos/mass_720p_%04d.ts -hls_fmp4_init_filename mass_720p_init.mp4 -s:v 1280x720 -b:v 2048k -b:a 320k -strict -2 static/videos/mass_720p.m3u8
+[2023-03-28 20:28:01,250] INFO: ffmpeg running command: ffmpeg -y -i prevideos/mass.mp4 -c:v libx264 -c:a aac -bf 1 -keyint_min 25 -g 250 -sc_threshold 40 -hls_list_size 0 -hls_time 10 -hls_allow_cache 1 -hls_segment_filename static/videos/mass_720p_%04d.ts -hls_fmp4_init_filename mass_720p_init.mp4 -s:v 1280x720 -b:v 2048k -b:a 320k -strict -2 static/videos/mass_720p.m3u8
+[2023-03-28 20:28:46,842] INFO: ffmpeg executed command successfully
+[2023-03-28 20:29:16,019] INFO: [WinError 183] Cannot create a file when that file already exists: 'static/videos'
+[2023-03-28 20:29:16,019] DEBUG: Using proactor: IocpProactor
+[2023-03-28 20:29:16,019] INFO: ffmpeg -y -i prevideos/hope.mkv -c:v libx264 -c:a aac -bf 1 -keyint_min 25 -g 250 -sc_threshold 40 -hls_list_size 0 -hls_time 10 -hls_allow_cache 1 -hls_segment_filename static/videos/hope_720p_%04d.ts -hls_fmp4_init_filename hope_720p_init.mp4 -s:v 1280x720 -b:v 2048k -b:a 320k -strict -2 static/videos/hope_720p.m3u8
+[2023-03-28 20:29:16,019] INFO: ffmpeg running command: ffmpeg -y -i prevideos/hope.mkv -c:v libx264 -c:a aac -bf 1 -keyint_min 25 -g 250 -sc_threshold 40 -hls_list_size 0 -hls_time 10 -hls_allow_cache 1 -hls_segment_filename static/videos/hope_720p_%04d.ts -hls_fmp4_init_filename hope_720p_init.mp4 -s:v 1280x720 -b:v 2048k -b:a 320k -strict -2 static/videos/hope_720p.m3u8
+[2023-03-28 20:31:08,167] INFO: ffmpeg executed command successfully
