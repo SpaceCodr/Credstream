@@ -184,11 +184,12 @@ def getallvideos():
     video_dict = [video.as_dict() for video in videos]
     return json.dumps(video_dict)
 
-def get_all_videos():
-    return Videos.query.all()
 
 def get_video_by_id(id):
     return Videos.query.get(id)
+
+def get_all_videos():
+    return Videos.query.all()
 
 def get_videos_by_genre(genre):
     return Videos.query.filter_by(genre=genre).all()
