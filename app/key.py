@@ -67,8 +67,6 @@ def write_key(input_file, key):
     if os.path.exists("keys/"+input_file[:-3]+"txt"):
         os.remove("keys/"+input_file[:-3]+"txt")
     
-
-
 def gen_num(n):
     numbers = list(range(n+1))
     random.shuffle(numbers)

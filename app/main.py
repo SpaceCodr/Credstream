@@ -98,8 +98,6 @@ def embed_watermark(section, logo,a,b,z1,z2):
             # M = B.shape[1]
 
             # Convert RGB block to grayscale
-            
-
             dct_block = sp.dct(sp.dct(B.T, norm='ortho').T, norm='ortho')
 
             # if logo[i,j] == 255:
