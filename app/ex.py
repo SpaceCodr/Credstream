@@ -5,7 +5,6 @@
 # plt.show 
 
 #!ffprobe -show_format -show_streams E:/phase_3\input\theif.mp4
-
 import cv2
 from matplotlib import pyplot as plt
 import main
