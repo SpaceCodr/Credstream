@@ -37,10 +37,10 @@ def get_key(input_file):
         buffer_size = 64 * 1024
         password = 'my_password'
 
-        # Encrypt the file
+        # Encrypt the files
         pyAesCrypt.encryptFile("keys/"+input_file[:-3]+"txt", "keys/"+input_file[:-3]+"csv", password, buffer_size)
     finally:
-        # Delete the unencrypted file
+        # Delete the unencrypted files
         if os.path.exists("keys/"+input_file[:-3]+"txt"):
             os.remove("keys/"+input_file[:-3]+"txt")
     

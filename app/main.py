@@ -11,9 +11,6 @@ from app.key import get_key, write_key
 from tqdm import tqdm
 
 
-
-
-
 def cfold(z):
     z_folded = (z.real % 1) + (z.imag % 1) * 1j
     return z_folded
