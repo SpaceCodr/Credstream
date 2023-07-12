@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video.js HLS Player</title>
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.min.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.15.0/videojs-contrib-hls.min.js"></script>
+</head>
+<body>
+    <video id="my_video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360">
+        <source src="http://192.168.1.7:4000/28/theif.m3u8" type="application/x-mpegURL">
+    </video>
+    <script>
+        var player = videojs('my_video');
+        player.play();
+    </script>
+</body>
+</html>

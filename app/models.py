@@ -1,6 +1,7 @@
 from datetime import datetime
 from flask_login import UserMixin
-from config import db
+from config import db,login_manager
+
 
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -26,3 +27,15 @@ class Videos(db.Model):
     
     def as_dict(self):
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
+class Watermark(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+    image_bytes = db.Column(db.LargeBinary, nullable=False)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+    user = db.relationship('User', backref='watermarks')
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
