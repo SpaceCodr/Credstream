@@ -255,7 +255,6 @@ def serve_segment(user_id,segment):
         
         return send_file(common_path)
    
-    
 
     open_path = 'embedded\\' + user.name + '\\' + segment
     if os.path.exists(open_path):
