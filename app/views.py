@@ -188,6 +188,11 @@ def getallvideos():
 def get_video_by_id(id):
     return Videos.query.get(id)
 
+@app.route('/videos', methods=['GET'])
+def all_videos():
+    videos = get_all_videos()
+    return jsonify([video.as_dict() for video in videos])
+
 def get_all_videos():
     return Videos.query.all()
 
@@ -197,10 +202,7 @@ def get_videos_by_genre(genre):
 def get_videos_by_release_year(year):
     return Videos.query.filter_by(release_year=year).all()
 
-@app.route('/videos', methods=['GET'])
-def all_videos():
-    videos = get_all_videos()
-    return jsonify([video.as_dict() for video in videos])
+
 
 @app.route('/videos/<int:id>', methods=['GET'])
 def video_by_id(id):
