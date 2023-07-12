@@ -181,8 +181,8 @@ def add_sample_video():
 @app.route('/getallvideos')
 def getallvideos():
     videos = Videos.query.all()
-    video_dicts = [video.as_dict() for video in videos]
-    return json.dumps(video_dicts)
+    video_dict = [video.as_dict() for video in videos]
+    return json.dumps(video_dict)
 
 def get_all_videos():
     return Videos.query.all()
@@ -206,6 +206,10 @@ def video_by_id(id):
     video = get_video_by_id(id)
     return jsonify(video.as_dict())
 
+@app.route('/thumbnail/<path:path>')
+def thumbnail(path):
+    return send_from_directory('metapic/title',path)
+
 @app.route('/videos/genre/<string:genre>', methods=['GET'])
 def videos_by_genre(genre):
     videos = get_videos_by_genre(genre)
@@ -216,9 +220,6 @@ def videos_by_year(year):
     videos = get_videos_by_release_year(year)
     return jsonify([video.as_dict() for video in videos])
 
-@app.route('/thumbnail/<path:path>')
-def thumbnail(path):
-    return send_from_directory('metapic/title',path)
 
 
 
