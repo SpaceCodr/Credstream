@@ -218,6 +218,8 @@ def videos_by_genre(genre):
     videos = get_videos_by_genre(genre)
     return jsonify([video.as_dict() for video in videos])
 
+
+
 @app.route('/videos/year/<int:year>', methods=['GET'])
 def videos_by_year(year):
     videos = get_videos_by_release_year(year)
