@@ -224,16 +224,6 @@ def videos_by_year(year):
     return jsonify([video.as_dict() for video in videos])
 
 
-
-
-
-# def delete_files():
-#     now = time.time()
-#     for filename, creation_time in list(streamed_files.items()):
-#         if now - creation_time > DELETE_TIME:
-#             os.remove(os.path.join(STREAM_FOLDER, filename))
-#             del streamed_files[filename]
-
 def delete_files():
     now = time.time()
     for folder in STREAM_FOLDER:

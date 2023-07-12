@@ -139,8 +139,7 @@ def embed_watermark(section, logo,a,b,z1,z2):
             # LL[x*4 : x*4+4 , y*4 : y*4+4 , c] = B
             mask[x][y][c] = 1
 
-            
-
+        
     LowPassR = LL[:,:,0]
     LowPassG = LL[:,:,1]
     LowPassB = LL[:,:,2]
