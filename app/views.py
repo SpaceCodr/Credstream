@@ -249,7 +249,6 @@ def serve_segment(user_id,segment):
     print(user)
     app.logger.info('recieved request for '+str(segment))
     common_path = 'commonsegments\\' + segment
-    
 
     if os.path.exists('commonsegments\\'+segment):
         
