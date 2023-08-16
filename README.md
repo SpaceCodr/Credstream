@@ -1,6 +1,6 @@
-# Flask App
+# Credstream
 
-This is a sample Flask app.
+This is a flask server application. It involves repository for video storage, databases for video information, user information and watermark storage. The main part of server in the invisible watermarking module which enables credential integrated edge-based watermarking for OTT. Main usecase is to prevent piracy by identifying the pirator.
 
 ## Installation
 
