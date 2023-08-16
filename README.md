@@ -4,7 +4,7 @@ This is a flask server application. It involves repository for video storage, da
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/user/repo.git`
+1. Clone the repository: `git clone https://github.com/SpaceCodr/Credstream.git`
 2. Install the dependencies: `pip install -r requirements.txt`
 3. Set the environment variables: `export FLASK_APP=run.py FLASK_ENV=development`
 4. Run the app: `flask run`
